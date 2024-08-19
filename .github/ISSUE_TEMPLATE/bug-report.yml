@@ -11,28 +11,11 @@ body:
     validations:
       required: true
     attributes:
-      label: Example Code
+      label: Описание ошибки
       description: |
-        Please add a self-contained, [minimal, reproducible, example](https://stackoverflow.com/help/minimal-reproducible-example) with your use case.
-        
-        If a maintainer can copy it, run it, and see it right away, there's a much higher chance that you'll be able to get help.
-        
-        **Important!** 
-        
-        * Use code tags (e.g., ```python ... ```) to correctly [format your code](https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks#syntax-highlighting).
-        * INCLUDE the language label (e.g. `python`) after the first three backticks to enable syntax highlighting. (e.g., ```python rather than ```).
-        * Reduce your code to the minimum required to reproduce the issue if possible. This makes it much easier for others to help you.
-        * Avoid screenshots when possible, as they are hard to read and (more importantly) don't allow others to copy-and-paste your code.
-
+        Напишите короткое описание того, что вы делаете, какое поведение наблюдаете и какого поведения ожидали.
+        Пожалуйста приложите код, выполнение которого вызывает ошибку
       placeholder: |
-        The following code: 
-        
-        ```python
-        from langchain_core.runnables import RunnableLambda
-
-        def bad_code(inputs) -> int:
-          raise NotImplementedError('For demo purpose')
-          
-          chain = RunnableLambda(bad_code)
-          chain.invoke('Hello!')
-        ```
+        * Я пытаюсь использовать `gigachain` чтобы сделать X.
+        * Я ожидаю получить Y.
+        * Вместо этого происходит Z.
